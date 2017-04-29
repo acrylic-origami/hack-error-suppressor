@@ -72,7 +72,7 @@ final class HackErrorSuppressor {
         return is_array($arg) && array_key_exists('file', $arg[0] ?? []);
       }
     ));
-    
+
     if (count($bt_args) !== 1) {
       return $this->callOldHandler(...$args);
     }
